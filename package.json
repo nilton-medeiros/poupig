@@ -1,0 +1,27 @@
+{
+  "name": "poupig",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "deploy": "turbo run deploy",
+    "dev": "turbo dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo lint",
+    "preinstall": "node ./apps/backend/src/script/preinstall",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "prettier": "^3.1.0",
+    "turbo": "1.10.16"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

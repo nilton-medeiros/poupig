@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "build",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2021",
+    "esModuleInterop": true,
+    "typeRoots": ["../../node_modules/@types"],
+    "noImplicitAny": false,
+  },
+  "compileOnSave": true,
+  "skipLibCheck": true,
+  "include": [
+    "../../packages/adapters/src",
+    "../../packages/core/src",
+    "../../packages/utils/src",
+    "./src/**/*",
+  ],
+  "exclude": [
+    "node_modules",
+    "../../packages/adapters/test",
+    "../../packages/core/test",
+    "../../packages/utils/test",
+  ],
+}
